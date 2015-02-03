@@ -21,6 +21,30 @@ class Calculator
 		@result = @result / operand
 	end
 
+	def abs
+		@result = @result.abs
+	end
+
+	def neg
+		@result = -1*@result
+	end
+
+	def sqrt
+		@result = Math.sqrt(@result)
+	end
+
+	def sqr
+		@result = @result * @result
+	end
+
+	def cubert
+		@result = @result**(1.0/3)
+	end
+
+	def cube
+		@result = @result**3
+	end
+
 	def cancel
 		@result = 0
 	end

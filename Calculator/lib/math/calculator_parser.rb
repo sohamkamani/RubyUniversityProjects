@@ -15,6 +15,18 @@ class CalculatorParser
 			@result = @calci.multiply(@operand)
 		elsif @operator == "divide"
 			@result = @calci.divide(@operand)
+		elsif @operator == "abs"
+			@result = @calci.abs
+		elsif @operator == "neg"
+			@result = @calci.neg
+		elsif @operator == "sqrt"
+			@result = @calci.sqrt
+		elsif @operator == "sqr"
+			@result = @calci.sqr
+		elsif @operator == "cubert"
+			@result = @calci.cubert
+		elsif @operator == "cube"
+			@result = @calci.cube
 		elsif @operator == "cancel"
 			@result = @calci.cancel
 		end
