@@ -1,4 +1,4 @@
-#to   execute commands
+#to do math
 
 class Calculator
 	def initialize
@@ -26,11 +26,11 @@ class Calculator
 	end
 
 	def neg
-		@result = -1*@result
+		@result = -1 * @result
 	end
 
 	def sqrt
-		@result = Math.sqrt(@result)
+		@result = @result ** 0.5
 	end
 
 	def sqr
@@ -38,11 +38,11 @@ class Calculator
 	end
 
 	def cubert
-		@result = @result**(1.0/3)
+		@result = @result ** (1.0 / 3)
 	end
 
 	def cube
-		@result = @result**3
+		@result = @result ** 3
 	end
 
 	def cancel

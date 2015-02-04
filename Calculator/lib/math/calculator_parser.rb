@@ -1,3 +1,4 @@
+# to parse inputs and make the calculator compute the result
 class CalculatorParser
 	def initialize
 		@calci = Calculator.new
