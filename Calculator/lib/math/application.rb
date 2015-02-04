@@ -14,7 +14,7 @@ class Application
         
         print "$ "
         input = gets.chomp
-        cmd = @parser.parse(input)
+        cmd = parser.parse(input)
         puts cmd.execute(@calc)
 
       end while input != 'exit'
