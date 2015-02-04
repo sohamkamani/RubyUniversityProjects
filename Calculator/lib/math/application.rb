@@ -2,23 +2,29 @@
 class Application
 
   def initialize
-    @dispatcher = Dispatch.new(0)
+    @calc = Calculator.new(0)
+    
   end
 
   def start
-    print "$ "
-    input = gets.chomp
-    while input != 'exit' do
-        puts @dispatcher.command(input)
+
+    parser = CalculatorParser.new 
+     
+     begin
+        
         print "$ "
         input = gets.chomp
-      end
+        cmd = @parser.parse(input)
+        puts cmd.execute(@calc)
+
+      end while input != 'exit'
     end
 
 
     def start_test
+      parser = CalculatorParser.new
       input = Kernel.gets.chomp
-      @dispatcher.command(input)
+      cmd = parser.parse(input)      
     end
 
 
