@@ -1,14 +1,15 @@
+#starts the calculator
 class Application
 
   def initialize
-    @calci = CalculatorParser.new
+    @dispatcher = Dispatch.new(0)
   end
 
   def start
     print "$ "
     input = gets.chomp
     while input != 'exit' do
-        puts @calci.command(input)
+        puts @dispatcher.command(input)
         print "$ "
         input = gets.chomp
       end
@@ -17,7 +18,7 @@ class Application
 
     def start_test
       input = Kernel.gets.chomp
-      @calci.command(input)
+      @dispatcher.command(input)
     end
 
 

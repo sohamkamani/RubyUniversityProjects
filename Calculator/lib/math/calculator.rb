@@ -1,8 +1,8 @@
 #to do math
 
 class Calculator
-	def initialize
-		@result = 0
+	def initialize(val)
+		@result = val
 	end
 
 	def add(operand)
