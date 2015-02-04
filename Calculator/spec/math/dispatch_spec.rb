@@ -45,5 +45,10 @@ describe "calculator" do
     dispatcher.command('add 2')
     expect(dispatcher.command('cube')).to eq(8)
   end
+  it 'should repeat last operations' do
+    dispatcher.command('add 5')
+    dispatcher.command('multiply 2')
+    expect(dispatcher.command('repeat 2')).to eq(30)
+  end
 
 end

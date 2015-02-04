@@ -10,7 +10,6 @@ method1('www').method2 'a','d'
 
 def allow(some_object)
 	def to(method_name, block)
-		eval("def #{some_object}.#{method_name} do #{block}")
 		end
 	end
 
@@ -20,7 +19,9 @@ def receive(method)
 end
 
 
-an_object = "smaple"
+an_object = "smaple
+thhfg
+fghfg"
 method = :length
 return_string = "sample"
 
