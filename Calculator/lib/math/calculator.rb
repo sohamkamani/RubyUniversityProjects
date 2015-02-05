@@ -38,7 +38,7 @@ class Calculator
 	end
 
 	def cubert
-		@result = @result ** (1.0 / 3)
+		@result = ((@result) ** (1.0/3.0)).round
 	end
 
 	def cube

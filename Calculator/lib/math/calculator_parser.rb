@@ -12,6 +12,8 @@ class CalculatorParser
       command = AddCommand.new(@opr[1])
     elsif @opr[0] == "subtract"
       command = SubtractCommand.new(@opr[1])
+    elsif @opr[0] == "neg"
+      command = NegCommand.new
     end
 
     return command
