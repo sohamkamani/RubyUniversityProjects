@@ -8,10 +8,9 @@ class RepeatCommand
   def execute(calc)
     result = nil
     while @opr != 0
-      result = @history.command_arr[@opr].execute(calc)
+      result = @history[@opr].execute(calc)
       @opr += 1
     end
     return result
   end
 end
-

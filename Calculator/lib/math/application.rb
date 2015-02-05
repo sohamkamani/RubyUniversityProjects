@@ -3,30 +3,33 @@ class Application
 
   def initialize
     @calc = Calculator.new(0)
-    @history = History.new
-    
+    @history = []
+
   end
 
   def start
 
-    parser = CalculatorParser.new 
-     
-     begin
-        
-        print "$ "
-        input = gets.chomp
-        cmd = parser.parse(input, @history)
-        puts cmd.execute(@calc)
+    parser = CalculatorParser.new
 
-      end while input != 'exit'
-    end
+    print "$ "
+    input = gets.chomp
+    begin
 
 
-    def start_test
-      parser = CalculatorParser.new
-      input = Kernel.gets.chomp
-      cmd = parser.parse(input)      
-    end
+      cmd = parser.parse(input, @history)
+      puts cmd.execute(@calc)
+      print "$ "
+      input = gets.chomp
 
-
+    end while input != 'exit'
   end
+
+
+  def start_test
+    parser = CalculatorParser.new
+    input = Kernel.gets.chomp
+    cmd = parser.parse(input)
+  end
+
+
+end
