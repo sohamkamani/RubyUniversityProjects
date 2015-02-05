@@ -3,6 +3,7 @@ class Application
 
   def initialize
     @calc = Calculator.new(0)
+    @history = History.new
     
   end
 
@@ -14,7 +15,7 @@ class Application
         
         print "$ "
         input = gets.chomp
-        cmd = parser.parse(input)
+        cmd = parser.parse(input, @history)
         puts cmd.execute(@calc)
 
       end while input != 'exit'

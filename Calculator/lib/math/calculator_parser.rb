@@ -2,7 +2,7 @@
 
 class CalculatorParser
 
-  def parse(command_string)
+  def parse(command_string,history)
 
 
     @opr = command_string.split
@@ -10,10 +10,36 @@ class CalculatorParser
 
     if @opr[0] == "add"
       command = AddCommand.new(@opr[1])
+      history.record(command)
     elsif @opr[0] == "subtract"
       command = SubtractCommand.new(@opr[1])
+      history.record(command)
     elsif @opr[0] == "neg"
       command = NegCommand.new
+      history.record(command)
+    elsif @opr[0] == "multiply"
+      command = MultiplyCommand.new(@opr[1])
+      history.record(command)
+    elsif @opr[0] == "divide"
+      command = DivideCommand.new(@opr[1])
+      history.record(command)
+    elsif @opr[0] == "cubert"
+      command = CubertCommand.new
+      history.record(command)
+    elsif @opr[0] == "sqr"
+      command = SqrCommand.new
+      history.record(command)
+    elsif @opr[0] == "sqrt"
+      command = SqrtCommand.new
+      history.record(command)
+    elsif @opr[0] == "abs"
+      command = AbsCommand.new
+      history.record(command)
+    elsif @opr[0] == "cube"
+      command = CubeCommand.new
+      history.record(command)
+    elsif @opr[0] == "repeat"
+      command = RepeatCommand.new(@opr[1],history)
     end
 
     return command
