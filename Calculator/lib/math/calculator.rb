@@ -1,6 +1,7 @@
 #to do math
 
 class Calculator
+	attr_reader :result
 	def initialize(val)
 		@result = val
 	end

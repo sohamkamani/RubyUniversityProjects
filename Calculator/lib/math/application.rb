@@ -4,22 +4,17 @@ class Application
   def initialize
     @calc = Calculator.new(0)
     @history = []
-
+    @view = View.new(@calc)
   end
 
   def start
-
     parser = CalculatorParser.new
-
-    print "$ "
-    input = gets.chomp
-    
+    input = @view.get_input
     begin
       cmd = parser.parse(input, @history, @calc)
-      puts cmd.execute
-      print "$ "
-      input = gets.chomp
-
+      cmd.execute
+      @view.refresh
+      input = @view.get_input
     end while input != 'exit'
   end
 

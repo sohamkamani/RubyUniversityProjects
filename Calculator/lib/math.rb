@@ -1,5 +1,6 @@
 require 'math/calculator_parser'
 require 'math/calculator'
+require 'math/view'
 require 'math/application'
 require 'math/command'
 require 'math/add_command'

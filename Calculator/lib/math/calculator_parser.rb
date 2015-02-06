@@ -1,13 +1,9 @@
 # to parse inputs and return a command
 
 class CalculatorParser
-
   def parse(command_string, history, calc)
-
-
     @opr = command_string.split
     @opr[1] = @opr[1].to_f
-
     if @opr[0] == "add"
       command = AddCommand.new(@opr[1], history , calc)
     elsif @opr[0] == "subtract"
@@ -33,9 +29,5 @@ class CalculatorParser
     elsif @opr[0] =="cancel"
       command = CancelCommand.new
     end
-
-    return command
   end
-
-
 end
