@@ -1,15 +1,14 @@
 #repeats past few commands based on the operand and history provided
 class RepeatCommand
 
-  def initialize(opr,history)
+  def initialize(opr)
     @opr = -opr
-    @history = history
   end
 
-  def execute(calc)
+  def execute(calc, history)
     result = nil
     while @opr != 0
-      result = @history[@opr].execute(calc)
+      result = history[@opr].execute(calc, [])
       @opr += 1
     end
     return result

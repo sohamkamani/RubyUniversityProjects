@@ -5,7 +5,8 @@ class MultiplyCommand
     @operand = operand
   end
   
-  def execute(calculator)
+  def execute(calculator, history)
+    history.push(self)
     calculator.multiply(@operand)
   end
   

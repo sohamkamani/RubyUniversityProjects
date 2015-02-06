@@ -3,7 +3,8 @@ class DivideCommand
   def initialize(operand)
     @operand = operand
   end
-  def execute(calculator)
+  def execute(calculator, history)
+    history.push(self)
     calculator.divide(@operand)
   end
 end

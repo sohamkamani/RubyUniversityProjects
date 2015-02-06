@@ -5,7 +5,8 @@ class SubtractCommand
 		@operand = operand
 	end
 
-	def execute(calculator)
+	def execute(calculator, history)
+    history.push(self)
 		calculator.subtract(@operand)
 	end
 

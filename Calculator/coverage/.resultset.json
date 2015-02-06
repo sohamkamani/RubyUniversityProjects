@@ -31,33 +31,23 @@
         null,
         12,
         1,
+        null,
         1,
         null,
         1,
+        null,
         1,
         null,
         1,
+        null,
         1,
         null,
         1,
+        null,
         1,
         null,
         1,
-        1,
         null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
         1,
         null,
         1,
@@ -144,7 +134,6 @@
         0,
         null,
         null,
-        null,
         0,
         0,
         0,
@@ -173,6 +162,7 @@
         null,
         1,
         2,
+        2,
         null,
         null,
         null
@@ -187,23 +177,27 @@
         null,
         1,
         2,
+        2,
         null,
         null,
         null
       ],
       "/Users/sohamchetan/Documents/newRubyProjects/Calculator/lib/math/neg_command.rb": [
+        null,
         1,
         null,
         1,
         1,
-        null,
+        1,
         null,
         null,
         null
       ],
       "/Users/sohamchetan/Documents/newRubyProjects/Calculator/lib/math/sqr_command.rb": [
+        null,
         1,
         null,
+        1,
         1,
         1,
         null,
@@ -212,30 +206,36 @@
         null
       ],
       "/Users/sohamchetan/Documents/newRubyProjects/Calculator/lib/math/cube_command.rb": [
+        null,
         1,
         null,
+        1,
         1,
         1,
         null,
         null
       ],
       "/Users/sohamchetan/Documents/newRubyProjects/Calculator/lib/math/divide_command.rb": [
+        null,
         1,
         1,
         2,
         null,
+        1,
         1,
         1,
         null,
         null
       ],
       "/Users/sohamchetan/Documents/newRubyProjects/Calculator/lib/math/multiply_command.rb": [
+        null,
         1,
         null,
         1,
         2,
         null,
         null,
+        1,
         1,
         1,
         null,
@@ -243,6 +243,8 @@
         null
       ],
       "/Users/sohamchetan/Documents/newRubyProjects/Calculator/lib/math/sqrt_command.rb": [
+        null,
+        1,
         1,
         1,
         1,
@@ -250,6 +252,8 @@
         null
       ],
       "/Users/sohamchetan/Documents/newRubyProjects/Calculator/lib/math/cubert_command.rb": [
+        null,
+        1,
         1,
         1,
         1,
@@ -257,6 +261,8 @@
         null
       ],
       "/Users/sohamchetan/Documents/newRubyProjects/Calculator/lib/math/abs_command.rb": [
+        null,
+        1,
         1,
         1,
         1,
@@ -264,10 +270,10 @@
         null
       ],
       "/Users/sohamchetan/Documents/newRubyProjects/Calculator/lib/math/repeat_command.rb": [
+        null,
         1,
         null,
         1,
-        2,
         2,
         null,
         null,
@@ -282,10 +288,15 @@
         null
       ],
       "/Users/sohamchetan/Documents/newRubyProjects/Calculator/lib/math/cancel_command.rb": [
+        null,
         1,
         null,
         1,
         1,
+        1,
+        null,
+        null,
+        null,
         null,
         null
       ],
@@ -325,7 +336,6 @@
         1,
         null,
         1,
-        13,
         13,
         1,
         1,
@@ -524,6 +534,6 @@
         null
       ]
     },
-    "timestamp": 1423136639
+    "timestamp": 1423201774
   }
 }

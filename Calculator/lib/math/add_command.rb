@@ -5,8 +5,9 @@ class AddCommand
 		@operand = operand
 	end
 
-	def execute(calculator)
-		calculator.add(@operand)
+	def execute(calculator, history)
+		history.push(self)
+    calculator.add(@operand)
 	end
 
 end
