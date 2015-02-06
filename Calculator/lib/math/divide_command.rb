@@ -1,3 +1,4 @@
+#provides a command for division
 class DivideCommand
   def initialize(operand)
     @operand = operand

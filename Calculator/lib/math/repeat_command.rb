@@ -1,3 +1,4 @@
+#repeats past few commands based on the operand and history provided
 class RepeatCommand
 
   def initialize(opr,history)

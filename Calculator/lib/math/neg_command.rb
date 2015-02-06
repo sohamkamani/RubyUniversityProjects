@@ -1,3 +1,4 @@
+#provides a command for negation
 class NegCommand
 
   def execute(calculator)

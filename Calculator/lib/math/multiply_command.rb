@@ -1,3 +1,4 @@
+#provides a command for multiplication
 class MultiplyCommand
 
   def initialize(operand)

@@ -13,9 +13,8 @@ class Application
 
     print "$ "
     input = gets.chomp
+    
     begin
-
-
       cmd = parser.parse(input, @history)
       puts cmd.execute(@calc)
       print "$ "
