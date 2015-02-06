@@ -1,13 +1,12 @@
 # it is a command to add an operand to the result
-class AddCommand 
+class AddCommand < Command
 
-	def initialize(operand)
-		@operand = operand
+	def initialize(operand , history , calc)
+		super(operand, history, calc)
 	end
 
-	def execute(calculator, history)
-		history.push(self)
-    calculator.add(@operand)
-	end
+  def execute_without_recording
+    @calc.add(@operand)
+  end
 
 end

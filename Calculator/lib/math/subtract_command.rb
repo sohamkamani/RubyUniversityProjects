@@ -1,13 +1,12 @@
 # it is a command to subtract an operand from the result
-class SubtractCommand 
+class SubtractCommand < Command
 
-	def initialize(operand)
-		@operand = operand
+	def initialize(operand, history, calculator)
+		super(operand, history, calculator)
 	end
 
-	def execute(calculator, history)
-    history.push(self)
-		calculator.subtract(@operand)
-	end
+  def execute_without_recording
+    @calc.subtract(@operand)
+  end
 
 end

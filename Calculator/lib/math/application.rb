@@ -15,8 +15,8 @@ class Application
     input = gets.chomp
     
     begin
-      cmd = parser.parse(input)
-      puts cmd.execute(@calc, @history)
+      cmd = parser.parse(input, @history, @calc)
+      puts cmd.execute
       print "$ "
       input = gets.chomp
 
