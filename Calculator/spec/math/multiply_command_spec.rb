@@ -1,10 +1,10 @@
 require 'spec_helper'
 
 describe 'MultiplyCommand' do
-  let(:command) { MultiplyCommand.new(5)}
   let(:calc) {Calculator.new(10)}
+  let(:command) { MultiplyCommand.new(5, [], calc)}
   it 'performs multiplication' do
-    expect(command.execute(calc, [])).to eq(50)
+    expect(command.execute).to eq(50)
   end
 
 end

@@ -1,13 +1,6 @@
 #provides a command for multiplication
-class MultiplyCommand
-
-  def initialize(operand)
-    @operand = operand
+class MultiplyCommand < Command
+  def execute_without_recording
+    @calc.multiply(@operand)
   end
-  
-  def execute(calculator, history)
-    history.push(self)
-    calculator.multiply(@operand)
-  end
-  
 end

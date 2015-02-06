@@ -1,9 +1,8 @@
 #provides a command for finding the square
-class SqrCommand
+class SqrCommand < Command
 
-  def execute(calculator, history)
-    history.push(self)
-    calculator.sqr
+  def execute_without_recording
+    @calc.sqr
   end
 
 

@@ -5,12 +5,12 @@ class View
   end
   
   def refresh
-    print "$ "
     puts @calc.result
     @calc.result
   end
 
   def get_input
+    print "$ "
     Kernel.gets
   end
 end

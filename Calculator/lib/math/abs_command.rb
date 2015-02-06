@@ -1,7 +1,6 @@
 #provides an abs command
-class AbsCommand
-  def execute(calculator, history)
-    history.push(self)
-    calculator.abs
+class AbsCommand < Command
+  def execute_without_recording
+    @calc.abs
   end
 end

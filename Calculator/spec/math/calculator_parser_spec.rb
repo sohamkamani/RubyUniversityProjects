@@ -39,4 +39,10 @@ describe "Calculator Parser" do
   it "should parse and return repeat command" do
     expect(calc_parser.parse("repeat 0", [], calc).class).to eq(RepeatCommand)
   end
+  it "should parse and return exit command" do
+    expect(calc_parser.parse("exit", [], calc).class).to eq(ExitCommand)
+  end
+  it "should parse and return nil command" do
+    expect(calc_parser.parse("dbhbve", [], calc).class).to eq(NilCommand)
+  end
 end

@@ -1,7 +1,6 @@
 #provides a command for finding the square root
-class SqrtCommand
-  def execute(calculator, history)
-    history.push(self)
-    calculator.sqrt
+class SqrtCommand < Command
+  def execute_without_recording
+    @calc.sqrt
   end
 end

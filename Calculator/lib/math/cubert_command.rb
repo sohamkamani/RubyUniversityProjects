@@ -1,7 +1,6 @@
 #provides a command for finding the cube root
-class CubertCommand
-  def execute(calculator, history)
-    history.push(self)
-    calculator.cubert
+class CubertCommand < Command
+  def execute_without_recording
+    @calc.cubert
   end
 end

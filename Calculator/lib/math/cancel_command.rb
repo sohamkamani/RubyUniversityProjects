@@ -1,11 +1,8 @@
 #provides a cancellation command
-class CancelCommand
-
-  def execute(calculator, history)
-    history.push(self)
-    calculator.cancel
+class CancelCommand < Command
+  def execute_without_recording
+    @calc.cancel
   end
-
 end
 
 

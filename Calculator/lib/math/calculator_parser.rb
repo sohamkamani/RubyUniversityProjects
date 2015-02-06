@@ -11,23 +11,27 @@ class CalculatorParser
     elsif @opr[0] == "neg"
       command = NegCommand.new
     elsif @opr[0] == "multiply"
-      command = MultiplyCommand.new(@opr[1])
+      command = MultiplyCommand.new(@opr[1], history, calc)
     elsif @opr[0] == "divide"
-      command = DivideCommand.new(@opr[1])
+      command = DivideCommand.new(@opr[1], history, calc)
     elsif @opr[0] == "cubert"
-      command = CubertCommand.new
+      command = CubertCommand.new(@opr[1], history, calc)
     elsif @opr[0] == "sqr"
-      command = SqrCommand.new
+      command = SqrCommand.new(@opr[1], history, calc)
     elsif @opr[0] == "sqrt"
-      command = SqrtCommand.new
+      command = SqrtCommand.new(@opr[1], history, calc)
     elsif @opr[0] == "abs"
-      command = AbsCommand.new
+      command = AbsCommand.new(@opr[1], history, calc)
     elsif @opr[0] == "cube"
-      command = CubeCommand.new
+      command = CubeCommand.new(@opr[1], history, calc)
     elsif @opr[0] == "repeat"
       command = RepeatCommand.new(@opr[1], history, calc)
     elsif @opr[0] =="cancel"
-      command = CancelCommand.new
+      command = CancelCommand.new(@opr[1], history, calc)
+    elsif @opr[0] =="exit"
+      command = ExitCommand.new(@opr[1], history, calc)
+    else
+      command = NilCommand.new(@opr[1], history, calc)
     end
   end
 end

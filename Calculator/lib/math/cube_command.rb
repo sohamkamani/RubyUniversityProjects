@@ -1,8 +1,7 @@
 #provides a command for cubing function
-class CubeCommand
+class CubeCommand < Command
 
-  def execute(calculator, history)
-    history.push(self)
-    calculator.cube
+  def execute_without_recording
+    @calc.cube
   end
 end
